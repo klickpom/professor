@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import { asLocale } from "@/lib/locale";
 import { site } from "@/data/site";
 import { getSiteUrl } from "@/lib/site-url";
+import { shareImage } from "@/lib/metadata";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileActionBar } from "@/components/layout/MobileActionBar";
@@ -45,6 +46,13 @@ export const metadata: Metadata = {
       { url: "/icon.png", type: "image/png", sizes: "32x32" },
     ],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
+  openGraph: {
+    images: [shareImage()],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [shareImage()],
   },
 };
 

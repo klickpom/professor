@@ -50,3 +50,7 @@ for (const entry of readdirSync(outDir, { withFileTypes: true })) {
 }
 
 console.log("Copied static export to the repo root for Hostinger public_html.");
+
+for (const leftover of ["opengraph-image", "ar/opengraph-image", "en/opengraph-image"]) {
+  rmSync(join(root, leftover), { force: true });
+}

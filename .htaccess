@@ -1,5 +1,7 @@
 Options -Indexes
 DirectoryIndex index.html
+AddType image/jpeg .jpg .jpeg
+AddType image/png .png
 
 RewriteEngine On
 

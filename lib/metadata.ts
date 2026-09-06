@@ -5,6 +5,18 @@ import { getSiteUrl } from "@/lib/site-url";
 
 type Href = Parameters<typeof getPathname>[0]["href"];
 
+export function shareImage() {
+  const url = `${getSiteUrl()}/og.jpg`;
+  return {
+    url,
+    secureUrl: url,
+    width: 1200,
+    height: 630,
+    type: "image/jpeg" as const,
+    alt: "البروفيسور للبورسلين والسيراميك — وكيل إيتونج المعتمد في الغربية",
+  };
+}
+
 export function pageMetadata(
   locale: AppLocale,
   href: Href,
@@ -30,6 +42,13 @@ export function pageMetadata(
       url: canonical,
       type: "website",
       siteName: locale === "ar" ? "البروفيسور" : "Al-Professor",
+      images: [shareImage()],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [shareImage()],
     },
   };
 }
