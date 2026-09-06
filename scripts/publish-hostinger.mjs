@@ -46,7 +46,7 @@ function git(args) {
 try {
   git(["init", "-b", "hostinger"]);
   git(["add", "-A"]);
-  git(["commit", "-m", "deploy: static export for professor-eg.online"]);
+  git(["commit", "-m", "deploy: static export for professo-eg.online"]);
   git(["remote", "add", "origin", origin]);
   git(["push", "-f", "origin", "hostinger"]);
 } finally {

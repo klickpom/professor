@@ -23,9 +23,9 @@ npm run build
 
 المستودع: [github.com/klickpom/professor](https://github.com/klickpom/professor)
 
-الدومين الحالي: [https://professor-eg.hostingersite.com](https://professor-eg.hostingersite.com)
+الدومين: [https://professo-eg.online](https://professo-eg.online)
 
-لو الموقع Node.js web app: Build = `build`، Start = `npm start` أو الملف `server.js`، Output = `.next`. كل push على `main` بيعمل Deploy جديد.
+لو الموقع Node.js web app مربوط بـ GitHub: كل push على `main` بيعمل Deploy جديد تلقائي.
 
 لو GIT على `public_html`: فرع `main` فيه `index.html`. استخدم `npm run deploy` قبل الدفع عشان تحدّث الملفات الثابتة.
 

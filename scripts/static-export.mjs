@@ -16,7 +16,7 @@ const env = {
   STATIC_EXPORT: "1",
   NEXT_PUBLIC_SITE_URL:
     process.env.NEXT_PUBLIC_SITE_URL ||
-    "https://professor-eg.hostingersite.com",
+    "https://professo-eg.online",
 };
 
 try {

@@ -31,7 +31,7 @@ jobs:
       - name: Build static site
         run: npm run build
         env:
-          NEXT_PUBLIC_SITE_URL: https://professor-eg.online
+          NEXT_PUBLIC_SITE_URL: https://professo-eg.online
 
       - name: Publish to hostinger branch
         uses: peaceiris/actions-gh-pages@v4
@@ -42,4 +42,4 @@ jobs:
           force_orphan: true
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com
-          commit_message: "deploy: static export for professor-eg.online"
+          commit_message: "deploy: static export for professo-eg.online"
