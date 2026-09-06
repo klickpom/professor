@@ -15,26 +15,22 @@ npm run dev
 
 ```bash
 npm run build
-npm start
 ```
+
+البناء بيخرج ملفات HTML ثابتة في `out/`، وبعدين بتتنسخ لجذر المستودع عشان Hostinger.
 
 ## النشر على Hostinger من GitHub
 
 المستودع: [github.com/klickpom/professor](https://github.com/klickpom/professor)
 
-الموقع يحتاج **Node.js Web App** على Hostinger. متستخدمش **متقدم → GIT → public_html** — ده بينسخ الكود خام ومش بيشغّل Next.js.
+الموقع اتحول لصفحات ثابتة. Hostinger **متقدم → GIT → public_html** على فرع `main` يقدر يخدمه لأن `index.html` موجود على جذر المستودع.
 
-1. في hPanel: **Websites → Add Website → Node.js web app**.
-2. **Import Git repository** واربط GitHub، واختار مستودع `professor` والفرع `main`.
-3. تأكد من الإعدادات:
-   - Framework: `next`
-   - Node.js: **20** أو **22**
-   - Build command: `build`
-   - Output directory: `.next`
-   - Entry file: فاضي (Hostinger يشغّل `npm start`)
-4. Environment variable:
-   - `NEXT_PUBLIC_SITE_URL` = `https://professor-eg.online`
-5. Deploy. كل push على `main` بيعمل نشر جديد.
+1. اربط المستودع `klickpom/professor` والفرع `main` إلى `public_html`.
+2. فعّل Auto Deployment.
+3. Deploy. بعد كده كل تحديث يتبني ويترفع على `main` هيظهر على الدومين.
+4. انشر التحديث من الجهاز بـ `npm run deploy` ثم commit/push للملفات الثابتة الجديدة.
+
+فرع `hostinger` فيه نفس الملفات الثابتة فقط (من غير كود Next).
 
 ## إضافة منتج
 

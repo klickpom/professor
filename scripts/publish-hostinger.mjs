@@ -15,7 +15,7 @@ if (!existsSync(join(outDir, "index.html"))) {
 const remote = spawnSync("git", ["remote", "get-url", "origin"], {
   cwd: root,
   encoding: "utf8",
-  shell: true,
+  windowsHide: true,
 });
 if (remote.status) process.exit(remote.status);
 const origin = remote.stdout.trim();
@@ -38,7 +38,7 @@ function git(args) {
     cwd: dir,
     env: gitEnv,
     stdio: "inherit",
-    shell: true,
+    windowsHide: true,
   });
   if (result.status) process.exit(result.status);
 }
