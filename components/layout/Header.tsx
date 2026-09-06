@@ -20,6 +20,7 @@ export async function Header() {
             width={44}
             height={44}
             priority
+            unoptimized
             className="size-11 rounded-full object-cover"
           />
           <span className="flex flex-col leading-tight">

@@ -30,6 +30,7 @@ export default async function AboutPage({ params }: Props) {
           src={site.logo}
           alt={site.name.ar}
           fill
+          unoptimized
           sizes="(max-width: 768px) 100vw, 720px"
           className="object-cover"
         />

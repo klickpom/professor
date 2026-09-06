@@ -6,8 +6,8 @@
     "productsDescription": "Photographed ETONG catalog: tile adhesive, grout, and latex additive. Request a quote in Gharbia.",
     "aboutTitle": "About | Al-Professor",
     "aboutDescription": "Al-Professor for porcelain and ceramics. Authorized ETONG agent in Gharbia Governorate.",
-    "projectsTitle": "Projects | Al-Professor",
-    "projectsDescription": "Al-Professor gallery. Real project photos will replace placeholders when provided.",
+    "projectsTitle": "Work | Al-Professor",
+    "projectsDescription": "Al-Professor campaign gallery: ETONG adhesive, CG2 grout, and latex.",
     "contactTitle": "Contact | Al-Professor",
     "contactDescription": "Request a quote on WhatsApp or call Al-Professor in Gharbia.",
     "notFoundTitle": "Page not found | Al-Professor"
@@ -147,11 +147,10 @@
     "todoAddress": "TODO: street address for the shop or dispatch store."
   },
   "projects": {
-    "kicker": "Projects",
-    "title": "Work gallery",
-    "lede": "Real job-site photos are still missing. Below are current brand materials, not documented installs.",
-    "todo": "TODO: send 2 to 4 real job photos (porcelain install or facade) and we replace this gallery.",
-    "placeholder": "Brand materials"
+    "kicker": "Work",
+    "title": "Campaign gallery",
+    "lede": "Full campaign posters, uncropped. Tap an image to enlarge.",
+    "close": "Close"
   },
   "contact": {
     "kicker": "Contact",

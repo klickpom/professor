@@ -22,6 +22,7 @@ export function ProductCard({ product }: { product: Product; index?: number }) {
           src={product.images[0]}
           alt={loc(product.name, locale)}
           fill
+          unoptimized
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-contain p-5"
         />

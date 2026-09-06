@@ -30,6 +30,7 @@ export async function HomeCatalog() {
                 src={product.images[0]}
                 alt={loc(product.name, locale)}
                 fill
+                unoptimized
                 sizes="(max-width: 640px) 100vw, 25vw"
                 className="object-contain p-4"
               />

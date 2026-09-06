@@ -22,7 +22,7 @@ npm start
 
 المستودع: [github.com/klickpom/professor](https://github.com/klickpom/professor)
 
-الموقع يحتاج **Node.js Web App** على Hostinger (مش استضافة HTML ثابتة)، لأن فيه عربي/إنجليزي على السيرفر.
+الموقع يحتاج **Node.js Web App** على Hostinger. متستخدمش **متقدم → GIT → public_html** — ده بينسخ الكود خام ومش بيشغّل Next.js.
 
 1. في hPanel: **Websites → Add Website → Node.js web app**.
 2. **Import Git repository** واربط GitHub، واختار مستودع `professor` والفرع `main`.
@@ -33,7 +33,7 @@ npm start
    - Output directory: `.next`
    - Entry file: فاضي (Hostinger يشغّل `npm start`)
 4. Environment variable:
-   - `NEXT_PUBLIC_SITE_URL` = رابط الدومين النهائي، مثال `https://your-domain.com`
+   - `NEXT_PUBLIC_SITE_URL` = `https://professor-eg.online`
 5. Deploy. كل push على `main` بيعمل نشر جديد.
 
 ## إضافة منتج
@@ -54,8 +54,5 @@ npm start
 
 ## أصول لسه ناقصة
 
-- شعار أسود شفاف (SVG/PNG) بدل الدائرة التسويقية
 - عنوان شارع للخريطة
-- 2–4 صور شغل حقيقي لصفحة الأعمال
 - نشرات إيتونج لو عايز تغطية لكل كجم من غير TODO
-- دومين الإنتاج في `NEXT_PUBLIC_SITE_URL`

@@ -21,6 +21,7 @@ export function Gallery({
           alt={alt}
           fill
           priority
+          unoptimized
           sizes="(max-width: 768px) 100vw, 50vw"
           className="object-contain p-6"
         />
@@ -36,7 +37,7 @@ export function Gallery({
                 index === active ? "border-ink" : "border-line"
               }`}
             >
-              <Image src={image} alt="" fill className="object-cover" sizes="64px" />
+              <Image src={image} alt="" fill unoptimized className="object-cover" sizes="64px" />
             </button>
           ))}
         </div>

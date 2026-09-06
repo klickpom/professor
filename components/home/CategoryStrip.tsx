@@ -31,6 +31,7 @@ export async function CategoryStrip() {
                     src={product.images[0]}
                     alt=""
                     fill
+                    unoptimized
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-contain p-4"
                   />

@@ -53,6 +53,7 @@ export async function Hero() {
                 alt={loc(product.name, locale)}
                 fill
                 priority
+                unoptimized
                 sizes="(max-width: 768px) 30vw, 180px"
                 className="object-contain"
               />
