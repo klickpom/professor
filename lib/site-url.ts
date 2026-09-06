@@ -2,6 +2,8 @@ export function getSiteUrl() {
   const explicit = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
   if (explicit) return explicit;
   if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
-  if (process.env.NODE_ENV === "production") return "https://professor-eg.online";
+  if (process.env.NODE_ENV === "production") {
+    return "https://professor-eg.hostingersite.com";
+  }
   return "http://localhost:3000";
 }

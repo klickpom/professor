@@ -17,20 +17,17 @@ npm run dev
 npm run build
 ```
 
-البناء بيخرج ملفات HTML ثابتة في `out/`، وبعدين بتتنسخ لجذر المستودع عشان Hostinger.
+البناء العادي (`npm run build`) يجهّز سيرفر Next.js لـ Hostinger Node.js.
 
 ## النشر على Hostinger من GitHub
 
 المستودع: [github.com/klickpom/professor](https://github.com/klickpom/professor)
 
-الموقع اتحول لصفحات ثابتة. Hostinger **متقدم → GIT → public_html** على فرع `main` يقدر يخدمه لأن `index.html` موجود على جذر المستودع.
+الدومين الحالي: [https://professor-eg.hostingersite.com](https://professor-eg.hostingersite.com)
 
-1. اربط المستودع `klickpom/professor` والفرع `main` إلى `public_html`.
-2. فعّل Auto Deployment.
-3. Deploy. بعد كده كل تحديث يتبني ويترفع على `main` هيظهر على الدومين.
-4. انشر التحديث من الجهاز بـ `npm run deploy` ثم commit/push للملفات الثابتة الجديدة.
+لو الموقع Node.js web app: Build = `build`، Start = `npm start` أو الملف `server.js`، Output = `.next`. كل push على `main` بيعمل Deploy جديد.
 
-فرع `hostinger` فيه نفس الملفات الثابتة فقط (من غير كود Next).
+لو GIT على `public_html`: فرع `main` فيه `index.html`. استخدم `npm run deploy` قبل الدفع عشان تحدّث الملفات الثابتة.
 
 ## إضافة منتج
 

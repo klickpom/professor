@@ -2,9 +2,10 @@ import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
+const isStaticExport = process.env.STATIC_EXPORT === "1";
 
 const nextConfig: NextConfig = {
-  output: "export",
+  ...(isStaticExport ? { output: "export" as const } : {}),
   trailingSlash: true,
   devIndicators: false,
   images: {

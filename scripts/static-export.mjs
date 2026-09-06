@@ -13,8 +13,10 @@ if (existsSync(proxy)) {
 
 const env = {
   ...process.env,
+  STATIC_EXPORT: "1",
   NEXT_PUBLIC_SITE_URL:
-    process.env.NEXT_PUBLIC_SITE_URL || "https://professor-eg.online",
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    "https://professor-eg.hostingersite.com",
 };
 
 try {
