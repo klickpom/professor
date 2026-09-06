@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ground: #e8e6e1;
+  --color-surface: #f7f6f3;
+  --color-surface-2: #dedbd4;
+  --color-ink: #161513;
+  --color-ink-dim: #5c5852;
+  --color-gold: #b42318;
+  --color-gold-bright: #d6453a;
+  --color-wa: #c41e3a;
+  --color-line: #cfcbc3;
+  --color-on-wa: #ffffff;
+  --font-display: var(--font-arabic), "IBM Plex Sans Arabic", sans-serif;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+:root {
+  --px: 0.5;
+  --py: 0.5;
+  --radius-window: 12px;
+  --tile: 28px;
+}
+
+html {
+  background: var(--color-ground);
+  color: var(--color-ink);
+  scroll-behavior: smooth;
+}
+
+html[lang="ar"] body {
+  font-family: var(--font-display);
+}
+
+html[lang="en"] body {
+  font-family: var(--font-sans);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-ground);
+  background-image:
+    linear-gradient(to right, #cfcbc380 1px, transparent 1px),
+    linear-gradient(to bottom, #cfcbc380 1px, transparent 1px);
+  background-size: var(--tile) var(--tile);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #b4231833;
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+.window-frame {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-window);
+  background: var(--color-surface);
+  box-shadow: 0 1px 0 #ffffffaa inset, 0 10px 24px #1615130d;
+}
+
+.btn-ink {
+  background: var(--color-ink);
+  color: var(--color-surface);
+}
+
+.btn-ink:hover {
+  opacity: 0.92;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

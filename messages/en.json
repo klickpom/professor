@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "homeTitle": "Al-Professor Porcelain & Ceramics | ETONG agent in Gharbia",
+    "homeDescription": "Al-Professor in Gharbia. Authorized ETONG porcelain adhesive agent. Adhesives, porcelain, and ceramics for contractors and finishing crews.",
+    "productsTitle": "ETONG products | Al-Professor",
+    "productsDescription": "Photographed ETONG catalog: tile adhesive, grout, and latex additive. Request a quote in Gharbia.",
+    "aboutTitle": "About | Al-Professor",
+    "aboutDescription": "Al-Professor for porcelain and ceramics. Authorized ETONG agent in Gharbia Governorate.",
+    "projectsTitle": "Projects | Al-Professor",
+    "projectsDescription": "Al-Professor gallery. Real project photos will replace placeholders when provided.",
+    "contactTitle": "Contact | Al-Professor",
+    "contactDescription": "Request a quote on WhatsApp or call Al-Professor in Gharbia.",
+    "notFoundTitle": "Page not found | Al-Professor"
+  },
+  "nav": {
+    "products": "Products",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "switchTo": "العربية",
+    "switchLabel": "Change language",
+    "home": "Home"
+  },
+  "actions": {
+    "whatsapp": "WhatsApp",
+    "catalog": "View catalog",
+    "call": "Call",
+    "location": "Location",
+    "quote": "Request a quote",
+    "viewProduct": "Product details"
+  },
+  "hero": {
+    "eyebrow": "Authorized ETONG agent in Gharbia",
+    "title": "Adhesive, grout, latex",
+    "role": "Al-Professor for porcelain and ceramics",
+    "lede": "FIX bags, CG2 tile grout, and Bond Latex 1 LT. The catalog is the photographed packs.",
+    "caption": "700 C2TE  /  GROUT CG2  /  LATEX 1LT",
+    "scroll": "scroll"
+  },
+  "homeCatalog": {
+    "kicker": "Catalog",
+    "title": "8 products, shown as packed",
+    "lede": "Adhesive, grout, and latex. Open a product for details and a quote."
+  },
+  "trust": {
+    "statusK": "STATUS",
+    "statusV": "Authorized ETONG agent",
+    "coverageK": "COVERAGE",
+    "coverageV": "Gharbia Governorate",
+    "lineK": "LINE",
+    "lineV": "8 photographed products"
+  },
+  "advisor": {
+    "kicker": "Adhesive match",
+    "title": "What is the job? We read the bag, not guess",
+    "lede": "Recommendations use printed pack text only. No invented tile-size or facade rules.",
+    "placeLabel": "Place",
+    "wet": "Bathroom or pool",
+    "wallsFloors": "Walls and floors",
+    "classLabel": "Printed class",
+    "classAny": "All codes",
+    "classC1": "C1",
+    "classC2": "C2",
+    "classHint": "Shown for walls and floors. Bathrooms and pools map to Ultra Fix Fiber as printed.",
+    "empty": "No photographed product matches. Ask on WhatsApp.",
+    "note": "If the job is different, send a photo of the tile and the room on WhatsApp."
+  },
+  "categories": {
+    "kicker": "Line",
+    "title": "Three categories from photographed packs",
+    "adhesive": "Tile adhesive",
+    "grout": "Grout",
+    "additive": "Additives",
+    "adhesiveDesc": "FIX bags from 500 through Ultra Fiber 840.",
+    "groutDesc": "Luxury tile grout CG2, 5 kg.",
+    "additiveDesc": "Etong Bond Latex, 1 litre."
+  },
+  "why": {
+    "kicker": "Why us",
+    "title": "Authorized agent, finishing work, Gharbia coverage",
+    "items": {
+      "agent": {
+        "title": "Authorized ETONG agent",
+        "body": "Porcelain adhesive with Italy Technology branding, agency inside Gharbia."
+      },
+      "bond": {
+        "title": "Strong adhesion",
+        "body": "The brief we work to with crews: the right adhesive for the right tile."
+      },
+      "stability": {
+        "title": "Stability",
+        "body": "Printed classes on the bags from C1T through C2TES2."
+      },
+      "finish": {
+        "title": "Porcelain and ceramics",
+        "body": "The business is luxury finishing. This catalog shows photographed chemicals; tiles are by enquiry."
+      }
+    }
+  },
+  "coverage": {
+    "kicker": "Coverage",
+    "title": "Gharbia in the distribution range",
+    "lede": "Cities shown on the exclusive-agency poster. No street address until one is provided."
+  },
+  "contactTeaser": {
+    "kicker": "Contact",
+    "title": "Need a quote or a distributor in Gharbia?",
+    "lede": "WhatsApp the code and quantity. Call the number on the emblem.",
+    "formName": "Name",
+    "formNeed": "What do you need",
+    "formSubmit": "Send on WhatsApp"
+  },
+  "productsPage": {
+    "kicker": "Catalog",
+    "title": "Photographed ETONG products",
+    "lede": "Filters and search use pack-extracted data. No prices here.",
+    "search": "Search by code or name",
+    "all": "All",
+    "empty": "No results. Try another code or clear search.",
+    "count": "{count} products"
+  },
+  "product": {
+    "specs": "Printed specifications",
+    "code": "Code",
+    "class": "Classification",
+    "pack": "Pack size",
+    "color": "Color",
+    "tech": "Technology",
+    "category": "Category",
+    "coverage": "Coverage per kg",
+    "coverageTodo": "TODO: not printed on the pack. Send an ETONG datasheet.",
+    "usage": "General application steps",
+    "usageNote": "General finishing guidance, not an official ETONG method statement.",
+    "steps": {
+      "one": "Prepare a clean, stable substrate.",
+      "two": "Mix according to the bag in hand.",
+      "three": "Spread with a notched trowel suited to the tile.",
+      "four": "Set the tile with even pressure and clean the excess."
+    },
+    "quoteText": "I need a quote for {name} ({code})"
+  },
+  "about": {
+    "kicker": "About",
+    "title": "Al-Professor in Gharbia",
+    "lede": "Porcelain, ceramics, and construction chemicals. Authorized agent for ETONG porcelain adhesive.",
+    "body": "We serve contractors, finishing crews, retailers, and homeowners in Gharbia. The site catalog is the packs that were photographed. Anything not printed on the bag is not stated as fact.",
+    "todoAddress": "TODO: street address for the shop or dispatch store."
+  },
+  "projects": {
+    "kicker": "Projects",
+    "title": "Work gallery",
+    "lede": "Real job-site photos are still missing. Below are current brand materials, not documented installs.",
+    "todo": "TODO: send 2 to 4 real job photos (porcelain install or facade) and we replace this gallery.",
+    "placeholder": "Brand materials"
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "WhatsApp or call",
+    "lede": "Map centered on Tanta, Gharbia, with no street pin.",
+    "name": "Name",
+    "need": "Request",
+    "submit": "Send WhatsApp",
+    "call": "Call",
+    "mapTitle": "Tanta, Gharbia Governorate"
+  },
+  "footer": {
+    "rights": "Al-Professor for Porcelain and Ceramics. Gharbia, Egypt.",
+    "partner": "ETONG"
+  },
+  "notFound": {
+    "title": "This page is not here",
+    "lede": "Go home or open the catalog.",
+    "home": "Home"
+  },
+  "common": {
+    "brandAlt": "Al-Professor porcelain and ceramics emblem"
+  }
+}
