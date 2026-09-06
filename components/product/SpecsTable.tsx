@@ -14,13 +14,15 @@ export async function SpecsTable({
   const tc = await getTranslations("categories");
   const rows = [
     { k: t("code"), v: product.code },
-    { k: t("class"), v: product.classification ?? "—" },
+    { k: t("class"), v: product.classification },
     { k: t("pack"), v: loc(product.packSize, locale) },
-    { k: t("color"), v: product.printedColor ? loc(product.printedColor, locale) : "—" },
-    { k: t("tech"), v: loc(product.technology, locale) },
+    {
+      k: t("color"),
+      v: product.printedColor ? loc(product.printedColor, locale) : null,
+    },
+    { k: t("tech"), v: product.technology ? loc(product.technology, locale) : null },
     { k: t("category"), v: tc(product.category) },
-    { k: t("coverage"), v: t("coverageTodo") },
-  ];
+  ].filter((row) => Boolean(row.v));
 
   return (
     <div className="overflow-hidden rounded-xl border border-line bg-surface">

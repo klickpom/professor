@@ -100,7 +100,7 @@
   "coverage": {
     "kicker": "Coverage",
     "title": "Gharbia in the distribution range",
-    "lede": "Cities shown on the exclusive-agency poster. No street address until one is provided."
+    "lede": "Distribution cities inside Gharbia Governorate."
   },
   "contactTeaser": {
     "kicker": "Contact",
@@ -127,24 +127,13 @@
     "color": "Color",
     "tech": "Technology",
     "category": "Category",
-    "coverage": "Coverage per kg",
-    "coverageTodo": "TODO: not printed on the pack. Send an ETONG datasheet.",
-    "usage": "General application steps",
-    "usageNote": "General finishing guidance, not an official ETONG method statement.",
-    "steps": {
-      "one": "Prepare a clean, stable substrate.",
-      "two": "Mix according to the bag in hand.",
-      "three": "Spread with a notched trowel suited to the tile.",
-      "four": "Set the tile with even pressure and clean the excess."
-    },
     "quoteText": "I need a quote for {name} ({code})"
   },
   "about": {
     "kicker": "About",
     "title": "Al-Professor in Gharbia",
     "lede": "Porcelain, ceramics, and construction chemicals. Authorized agent for ETONG porcelain adhesive.",
-    "body": "We serve contractors, finishing crews, retailers, and homeowners in Gharbia. The site catalog is the packs that were photographed. Anything not printed on the bag is not stated as fact.",
-    "todoAddress": "TODO: street address for the shop or dispatch store."
+    "body": "We serve contractors, finishing crews, retailers, and homeowners in Gharbia. The site catalog is the packs that were photographed. Anything not printed on the bag is not stated as fact."
   },
   "projects": {
     "kicker": "Work",
@@ -155,7 +144,7 @@
   "contact": {
     "kicker": "Contact",
     "title": "WhatsApp or call",
-    "lede": "Map centered on Tanta, Gharbia, with no street pin.",
+    "lede": "Map centered on Tanta, Gharbia Governorate.",
     "name": "Name",
     "need": "Request",
     "submit": "Send WhatsApp",

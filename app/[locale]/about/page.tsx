@@ -22,9 +22,6 @@ export default async function AboutPage({ params }: Props) {
     <div className="mx-auto max-w-4xl px-4 pb-16 pt-8 sm:px-6">
       <SectionHeading kicker={t("kicker")} title={t("title")} lede={t("lede")} as="h1" />
       <p className="text-lg text-ink-dim">{t("body")}</p>
-      <p className="mt-6 rounded-xl border border-line bg-surface px-4 py-3 text-sm text-ink-dim">
-        {t("todoAddress")}
-      </p>
       <div className="relative mt-10 aspect-[4/5] overflow-hidden rounded-xl border border-line">
         <Image
           src={site.logo}

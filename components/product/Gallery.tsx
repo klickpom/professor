@@ -15,7 +15,7 @@ export function Gallery({
 
   return (
     <div>
-      <div className="relative aspect-[3/4] overflow-hidden rounded-xl border border-line bg-surface">
+      <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-line bg-surface">
         <Image
           src={src}
           alt={alt}
@@ -23,7 +23,7 @@ export function Gallery({
           priority
           unoptimized
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain p-6"
+          className="object-contain p-4"
         />
       </div>
       {images.length > 1 ? (

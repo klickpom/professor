@@ -7,7 +7,6 @@ import { pageMetadata } from "@/lib/metadata";
 import { asLocale } from "@/lib/locale";
 import { Gallery } from "@/components/product/Gallery";
 import { SpecsTable } from "@/components/product/SpecsTable";
-import { UsageSteps } from "@/components/product/UsageSteps";
 import { QuoteCta } from "@/components/product/QuoteCta";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getSiteUrl } from "@/lib/site-url";
@@ -90,9 +89,8 @@ export default async function ProductPage({ params }: Props) {
           <QuoteCta name={name} code={product.code} />
         </div>
       </div>
-      <div className="mt-12 grid gap-8 lg:grid-cols-2">
+      <div className="mt-12">
         <SpecsTable product={product} locale={locCode} />
-        <UsageSteps />
       </div>
     </div>
   );

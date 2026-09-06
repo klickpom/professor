@@ -13,7 +13,7 @@ export type Product = {
   images: readonly string[];
   classification: string | null;
   printedColor: LocaleText | null;
-  technology: LocaleText;
+  technology: LocaleText | null;
   name: LocaleText;
   summary: LocaleText;
   features: readonly LocaleText[];
@@ -33,7 +33,7 @@ export const products: readonly Product[] = [
     images: ["/assets/products/fix-500-c1t.jpg"],
     classification: "C1T",
     printedColor: null,
-    technology: { ar: "تكنولوجيا إيطالية", en: "Italy Technology" },
+    technology: { ar: "تكنولوجيا إيطالية", en: "ITALY TECHNOLOGY" },
     name: { ar: "إيتونج فيكس 500 C1T", en: "etong FIX 500 C1T" },
     summary: {
       ar: "مادة لاصقة. الاستخدامات المطبوعة على الشكارة: سيراميك وبورسلين، حوائط وأرضيات.",
@@ -59,7 +59,7 @@ export const products: readonly Product[] = [
     images: ["/assets/products/fix-600-c1te.jpg"],
     classification: "C1TE",
     printedColor: null,
-    technology: { ar: "تكنولوجيا إيطالية", en: "Italy Technology" },
+    technology: { ar: "تكنولوجيا إيطالية", en: "ITALY TECHNOLOGY" },
     name: { ar: "إيتونج فيكس 600 C1TE", en: "etong FIX 600 C1TE" },
     summary: {
       ar: "مادة لاصقة. الاستخدامات المطبوعة على الشكارة: سيراميك وبورسلين، حوائط وأرضيات.",
@@ -69,7 +69,8 @@ export const products: readonly Product[] = [
       { ar: "للسيراميك والبورسلين", en: "For ceramic and porcelain tiles" },
       { ar: "للحوائط والأرضيات", en: "For walls and floors" },
       { ar: "وقت مفتوح ممتد", en: "Extended open time" },
-      { ar: "مقاوم للصقيع", en: "Frost resistant" },
+      { ar: "وقت مفتوح محسّن", en: "Enhanced open time" },
+      { ar: "مقاوم للصقيع", en: "Frost Resistant" },
     ],
     advisorPlaces: ["wallsFloors"],
     printedClass: "C1",
@@ -85,7 +86,7 @@ export const products: readonly Product[] = [
     images: ["/assets/products/fix-700-c2te.jpg"],
     classification: "C2TE",
     printedColor: null,
-    technology: { ar: "تكنولوجيا إيطالية", en: "Italy Technology" },
+    technology: { ar: "تكنولوجيا إيطالية", en: "ITALY TECHNOLOGY" },
     name: { ar: "إيتونج فيكس 700 C2TE", en: "etong FIX 700 C2TE" },
     summary: {
       ar: "مادة لاصقة. الاستخدامات المطبوعة على الشكارة: سيراميك وبورسلين، حوائط وأرضيات.",
@@ -111,7 +112,7 @@ export const products: readonly Product[] = [
     images: ["/assets/products/fix-740-c2tes.jpg"],
     classification: "C2TES",
     printedColor: null,
-    technology: { ar: "تكنولوجيا إيطالية", en: "Italy Technology" },
+    technology: { ar: "تكنولوجيا إيطالية", en: "ITALY TECHNOLOGY" },
     name: { ar: "إيتونج فيكس 740 C2TES", en: "etong FIX 740 C2TES" },
     summary: {
       ar: "مادة لاصقة. الاستخدامات المطبوعة على الشكارة: سيراميك وبورسلين، حوائط وأرضيات.",
@@ -137,7 +138,7 @@ export const products: readonly Product[] = [
     images: ["/assets/products/fix-800-c2tes1.jpg"],
     classification: "C2TES1",
     printedColor: null,
-    technology: { ar: "تكنولوجيا إيطالية", en: "Italy Technology" },
+    technology: { ar: "تكنولوجيا إيطالية", en: "ITALY TECHNOLOGY" },
     name: { ar: "إيتونج فيكس 800 C2TES1", en: "etong FIX 800 C2TES1" },
     summary: {
       ar: "مادة لاصقة. الاستخدامات المطبوعة على الشكارة: سيراميك وبورسلين، حوائط وأرضيات.",
@@ -163,7 +164,7 @@ export const products: readonly Product[] = [
     images: ["/assets/products/ultra-fix-fiber-840.jpg"],
     classification: "C2TES2",
     printedColor: { ar: "أبيض", en: "White" },
-    technology: { ar: "تكنولوجيا إيطالية", en: "Italy Technology" },
+    technology: { ar: "تكنولوجيا إيطالية", en: "ITALY TECHNOLOGY" },
     name: {
       ar: "إيتونج ألترا فيكس فايبر 840",
       en: "etong FIX Ultra Fix Fiber 840",
@@ -194,17 +195,17 @@ export const products: readonly Product[] = [
     images: ["/assets/products/grout-cg2.jpg"],
     classification: "CG2",
     printedColor: null,
-    technology: { ar: "تكنولوجيا إيطالية", en: "Italy Technology" },
+    technology: null,
     name: { ar: "روبة بلاط فاخرة CG2", en: "etone TILE GROUT CG2" },
     summary: {
       ar: "روبة بلاط فاخرة CG2 وزن 5 كجم حسب المكتوب على العبوة.",
       en: "Luxury tile grout CG2, 5 kg, as printed on the pack.",
     },
     features: [
-      { ar: "للداخل والخارج", en: "Internal & External" },
-      { ar: "للسيراميك والبورسلين", en: "Ceramic & Porcelain" },
+      { ar: "مرن للغاية، للداخل والخارج", en: "Ultra Flexible, Interior & Exterior" },
+      { ar: "للسيراميك والبورسلين", en: "Universal for Ceramic & Porcelain" },
       { ar: "سهل الاستخدام", en: "Easy application" },
-      { ar: "مضاد للماء", en: "Water resistant" },
+      { ar: "مقاوم للماء", en: "Water resistant" },
       { ar: "مقاوم للتجمد", en: "Frost resistant" },
     ],
     advisorPlaces: [],
@@ -221,7 +222,7 @@ export const products: readonly Product[] = [
     images: ["/assets/products/bond-latex.jpg"],
     classification: null,
     printedColor: null,
-    technology: { ar: "تكنولوجيا إيطالية", en: "Italy Technology" },
+    technology: null,
     name: { ar: "لاتكس إيتونغ بوند", en: "Etong Bond Latex" },
     summary: {
       ar: "إضافة لاتكس إيتونغ بوند. العبوة 1 لتر حسب الملصق.",

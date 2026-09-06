@@ -32,8 +32,8 @@ export const faqs: readonly FaqItem[] = [
       en: "Is coverage per kg listed?",
     },
     a: {
-      ar: "لأ. التغطية لكل كجم مش مطبوعة على الشكاير اللي عندنا. ابعت نشرة إيتونج لو عندك، أو اسأل على واتساب حسب نوع البلاطة.",
-      en: "No. Coverage per kg is not printed on the bags we have. Send an ETONG datasheet if you have one, or ask on WhatsApp for your tile type.",
+      ar: "التغطية لكل كجم مش مكتوبة على العبوات المعروضة. اسأل على واتساب حسب نوع البلاطة.",
+      en: "Coverage per kg is not printed on the packs shown here. Ask on WhatsApp for your tile type.",
     },
   },
   {
