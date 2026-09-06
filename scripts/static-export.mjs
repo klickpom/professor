@@ -14,9 +14,7 @@ if (existsSync(proxy)) {
 const env = {
   ...process.env,
   STATIC_EXPORT: "1",
-  NEXT_PUBLIC_SITE_URL:
-    process.env.NEXT_PUBLIC_SITE_URL ||
-    "https://professo-eg.online",
+  NEXT_PUBLIC_SITE_URL: "https://professo-eg.online",
 };
 
 try {

@@ -180,6 +180,7 @@ export const products: readonly Product[] = [
       { ar: "مقاوم للماء والمسابح", en: "Water and pool resistant" },
       { ar: "مانع للانزلاق", en: "Non slip" },
       { ar: "وقت مفتوح ممتد", en: "Extended open time" },
+      { ar: "جودة فاخرة", en: "PREMIUM Quality" },
     ],
     advisorPlaces: ["wet"],
     printedClass: "C2",
