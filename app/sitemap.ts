@@ -4,6 +4,8 @@ import { getSiteUrl } from "@/lib/site-url";
 import { routing } from "@/i18n/routing";
 import { getPathname } from "@/i18n/navigation";
 
+export const dynamic = "force-static";
+
 const paths = ["/", "/products", "/about", "/projects", "/contact"] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {

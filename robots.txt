@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://professor-eg.online
+Sitemap: https://professor-eg.online/sitemap.xml

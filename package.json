@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/static-export.mjs",
+    "deploy": "node scripts/static-export.mjs && node scripts/sync-static-to-root.mjs && node scripts/publish-hostinger.mjs",
     "start": "next start --hostname 0.0.0.0",
     "lint": "eslint"
   },
