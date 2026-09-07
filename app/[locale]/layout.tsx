@@ -12,6 +12,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileActionBar } from "@/components/layout/MobileActionBar";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { organizationGraph } from "@/lib/schema";
 import "../globals.css";
 
 const geist = Geist({
@@ -40,6 +41,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: site.name.ar,
   description: site.role.ar,
+  applicationName: site.shortName.ar,
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48" },
@@ -82,24 +84,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           <Footer />
           <MobileActionBar />
         </NextIntlClientProvider>
-        <JsonLd
-          data={{
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: site.name.ar,
-            alternateName: site.name.en,
-            image: `${getSiteUrl()}${site.logo}`,
-            telephone: site.phoneCall,
-            url: getSiteUrl(),
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: site.city.en,
-              addressRegion: "Gharbia",
-              addressCountry: site.country,
-            },
-            areaServed: site.cities.map((city) => city.en),
-          }}
-        />
+        <JsonLd data={organizationGraph()} />
       </body>
     </html>
   );

@@ -8,8 +8,9 @@ import { asLocale } from "@/lib/locale";
 import { Gallery } from "@/components/product/Gallery";
 import { SpecsTable } from "@/components/product/SpecsTable";
 import { QuoteCta } from "@/components/product/QuoteCta";
+import { RelatedProducts } from "@/components/product/RelatedProducts";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { getSiteUrl } from "@/lib/site-url";
+import { breadcrumbJsonLd, productJsonLd } from "@/lib/schema";
 import { Link } from "@/i18n/navigation";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -39,34 +40,19 @@ export default async function ProductPage({ params }: Props) {
   setRequestLocale(locale);
   const product = getProduct(slug);
   if (!product) notFound();
-  const locCode = locale;
   const tNav = await getTranslations("nav");
-  const name = loc(product.name, locCode);
-  const siteUrl = getSiteUrl();
+  const name = loc(product.name, locale);
+  const productHref = `/products/${product.slug}` as const;
 
   return (
     <div className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6">
+      <JsonLd data={productJsonLd(product, locale)} />
       <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "Product",
-          name,
-          brand: product.brand,
-          sku: product.code,
-          image: `${siteUrl}${product.images[0]}`,
-          description: loc(product.summary, locCode),
-        }}
-      />
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            { "@type": "ListItem", position: 1, name: tNav("home"), item: siteUrl },
-            { "@type": "ListItem", position: 2, name: tNav("products"), item: `${siteUrl}/products` },
-            { "@type": "ListItem", position: 3, name },
-          ],
-        }}
+        data={breadcrumbJsonLd(locale, [
+          { name: tNav("home"), href: "/" },
+          { name: tNav("products"), href: "/products" },
+          { name, href: productHref },
+        ])}
       />
       <p className="mb-6 text-sm text-ink-dim">
         <Link href="/products">{tNav("products")}</Link>
@@ -78,11 +64,13 @@ export default async function ProductPage({ params }: Props) {
         <div className="space-y-6">
           <p className="font-mono text-gold">{product.code}</p>
           <h1 className="text-4xl font-semibold sm:text-5xl">{name}</h1>
-          <p className="text-ink-dim">{loc(product.summary, locCode)}</p>
+          <p data-speakable className="text-ink-dim">
+            {loc(product.summary, locale)}
+          </p>
           <ul className="space-y-2 text-sm">
             {product.features.map((feature) => (
               <li key={feature.en} className="border-b border-line py-2">
-                {loc(feature, locCode)}
+                {loc(feature, locale)}
               </li>
             ))}
           </ul>
@@ -90,8 +78,9 @@ export default async function ProductPage({ params }: Props) {
         </div>
       </div>
       <div className="mt-12">
-        <SpecsTable product={product} locale={locCode} />
+        <SpecsTable product={product} locale={locale} />
       </div>
+      <RelatedProducts product={product} locale={locale} />
     </div>
   );
 }

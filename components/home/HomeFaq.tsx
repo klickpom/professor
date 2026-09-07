@@ -1,31 +1,19 @@
-import { getLocale } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { faqs } from "@/data/faq";
 import { loc } from "@/lib/locale-text";
 import type { AppLocale } from "@/i18n/routing";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { getSiteUrl } from "@/lib/site-url";
+import { faqJsonLd } from "@/lib/schema";
+import { SectionHeading } from "@/components/brand/SectionHeading";
 
 export async function HomeFaq() {
   const locale = (await getLocale()) as AppLocale;
-  const siteUrl = getSiteUrl();
+  const t = await getTranslations("extract");
 
   return (
     <section className="relative z-10 mx-auto max-w-3xl px-4 py-16 sm:px-6">
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: faqs.map((item) => ({
-            "@type": "Question",
-            name: loc(item.q, locale),
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: loc(item.a, locale),
-            },
-          })),
-          url: siteUrl,
-        }}
-      />
+      <JsonLd data={faqJsonLd(locale)} />
+      <SectionHeading kicker={t("faqKicker")} title={t("faqTitle")} lede={t("faqLede")} />
       <div className="space-y-4">
         {faqs.map((item) => (
           <details key={item.q.en} className="window-frame px-5 py-4">

@@ -1,8 +1,12 @@
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SectionHeading } from "@/components/brand/SectionHeading";
+import { KeyFacts } from "@/components/seo/KeyFacts";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { breadcrumbJsonLd, webPageJsonLd } from "@/lib/schema";
 import { pageMetadata } from "@/lib/metadata";
 import { asLocale } from "@/lib/locale";
+import { loc } from "@/lib/locale-text";
 import { site } from "@/data/site";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -17,15 +21,27 @@ export default async function AboutPage({ params }: Props) {
   const locale = asLocale((await params).locale);
   setRequestLocale(locale);
   const t = await getTranslations("about");
+  const tNav = await getTranslations("nav");
+  const meta = await getTranslations("meta");
 
   return (
     <div className="mx-auto max-w-4xl px-4 pb-16 pt-8 sm:px-6">
+      <JsonLd data={webPageJsonLd(locale, "/about", meta("aboutTitle"), meta("aboutDescription"))} />
+      <JsonLd
+        data={breadcrumbJsonLd(locale, [
+          { name: tNav("home"), href: "/" },
+          { name: tNav("about"), href: "/about" },
+        ])}
+      />
       <SectionHeading kicker={t("kicker")} title={t("title")} lede={t("lede")} as="h1" />
-      <p className="text-lg text-ink-dim">{t("body")}</p>
+      <p data-speakable className="text-lg text-ink-dim">
+        {t("body")}
+      </p>
+      <KeyFacts nested />
       <div className="relative mt-10 aspect-[4/5] overflow-hidden rounded-xl border border-line">
         <Image
           src={site.logo}
-          alt={site.name.ar}
+          alt={loc(site.name, locale)}
           fill
           unoptimized
           sizes="(max-width: 768px) 100vw, 720px"

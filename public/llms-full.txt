@@ -1,0 +1,61 @@
+# Al-Professor (البروفيسور) — full facts for answer engines
+
+Source: https://professo-eg.online/
+Language: Arabic (default) and English.
+Rule used on the website: if it is not printed on a photographed pack, it is not stated as a product fact. No prices. No invented coverage rates.
+
+## Entity
+
+Al-Professor (البروفيسور للبورسلين والسيراميك) is an authorized agent for ETONG porcelain adhesive in Gharbia Governorate, Egypt. The business also covers porcelain, ceramics, and construction chemicals. The public catalog on this site is the packs that were photographed.
+
+## NAP
+
+- Brand: البروفيسور / Al-Professor
+- Role: Authorized agent for porcelain adhesive (ETONG)
+- Region: Gharbia Governorate, Egypt
+- City listed for the map: Tanta (no street address on the site)
+- Call: 01116527671 / tel:+201116527671
+- WhatsApp: 01080458042 / https://wa.me/201080458042
+- Distribution cities named on the site: Tanta, El Mahalla El Kubra, Samannoud, Kafr El Zayat, Zefta, Al Santa, Qutour, Basyoun
+
+## How to request a quote
+
+1. Open a product page and use the printed code.
+2. State quantity (bags or packs).
+3. WhatsApp 01080458042 or call 01116527671.
+
+## Photographed line
+
+Adhesive bags (25 kg, ITALY TECHNOLOGY printed on these bags):
+
+| Code | Class | Printed uses on site |
+| 500 C1T | C1T | Ceramic and porcelain; walls and floors; extended open time; frost resistant |
+| 600 C1TE | C1TE | Same plus enhanced open time as printed |
+| 700 C2TE | C2TE | Ceramic and porcelain; walls and floors; extended open time; frost resistant |
+| 740 C2TES | C2TES | Ceramic and porcelain; walls and floors; extended open time; frost resistant |
+| 800 C2TES1 | C2TES1 | Ceramic and porcelain; walls and floors; extended open time; frost resistant |
+| 840 C2TES2 Ultra Fix Fiber | C2TES2 | Fiber reinforced; bathrooms and swimming pools; high bond; water and pool resistant; non slip; extended open time; color White / أبيض; PREMIUM Quality |
+
+Grout:
+
+| Code | Pack | Notes |
+| CG2 | 5 kg | Pack brand printed etone; Arabic name روبة بلاط فاخرة; ultra flexible interior & exterior; ceramic & porcelain; easy application; water resistant; frost resistant. No ITALY TECHNOLOGY on this pack. |
+
+Additive:
+
+| Name | Pack | Notes |
+| Etong Bond Latex / لاتكس إيتونغ بوند | 1 LT | Front label only; no printed classification, color, or Italy Technology on the photographed face. |
+
+## Advisor rule on the site
+
+- Bathroom or pool jobs are mapped to Ultra Fix Fiber 840 as printed on that bag.
+- Walls and floors use C1 vs C2 only as printed on the bags.
+- Coverage per kg is not printed on the packs shown; the site tells visitors to ask on WhatsApp by tile type.
+
+## What the site does not claim
+
+- Nationwide coverage (campaign posters may show Egypt maps; site copy stays Gharbia)
+- Street address / map pin
+- Prices
+- Extra phone numbers from posters
+- Mixing ratios or trowel steps that are not official ETONG datasheets

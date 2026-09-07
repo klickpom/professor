@@ -8,8 +8,13 @@ import { WhyUs } from "@/components/home/WhyUs";
 import { CoverageMap } from "@/components/home/CoverageMap";
 import { ContactForm } from "@/components/home/ContactForm";
 import { HomeFaq } from "@/components/home/HomeFaq";
+import { KeyFacts } from "@/components/seo/KeyFacts";
+import { LineupTable } from "@/components/seo/LineupTable";
+import { QuoteHowTo } from "@/components/seo/QuoteHowTo";
 import { pageMetadata } from "@/lib/metadata";
 import { asLocale } from "@/lib/locale";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { webPageJsonLd } from "@/lib/schema";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -23,16 +28,21 @@ export default async function HomePage({ params }: Props) {
   const locale = asLocale((await params).locale);
   setRequestLocale(locale);
   const t = await getTranslations("contactTeaser");
+  const meta = await getTranslations("meta");
 
   return (
     <>
+      <JsonLd data={webPageJsonLd(locale, "/", meta("homeTitle"), meta("homeDescription"))} />
       <Hero />
       <TrustBar />
+      <KeyFacts />
       <HomeCatalog />
+      <LineupTable />
       <AdhesiveAdvisor />
       <CategoryStrip />
       <WhyUs />
       <CoverageMap />
+      <QuoteHowTo />
       <ContactForm kicker={t("kicker")} title={t("title")} lede={t("lede")} />
       <HomeFaq />
     </>

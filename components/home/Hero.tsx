@@ -31,6 +31,9 @@ export async function Hero() {
         </h1>
         <p className="mt-4 text-xl text-ink">{t("hero.role")}</p>
         <p className="mt-5 max-w-md text-base text-ink-dim sm:text-lg">{t("hero.lede")}</p>
+        <p data-speakable className="mt-4 max-w-xl text-base text-ink">
+          {t("hero.definition")}
+        </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <MagneticCta href={waLink()} variant="wa" external>
             {t("actions.whatsapp")}

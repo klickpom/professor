@@ -1,15 +1,15 @@
 {
   "meta": {
-    "homeTitle": "Al-Professor Porcelain & Ceramics | ETONG agent in Gharbia",
-    "homeDescription": "Al-Professor in Gharbia. Authorized ETONG porcelain adhesive agent. Adhesives, porcelain, and ceramics for contractors and finishing crews.",
-    "productsTitle": "ETONG products | Al-Professor",
-    "productsDescription": "Photographed ETONG catalog: tile adhesive, grout, and latex additive. Request a quote in Gharbia.",
-    "aboutTitle": "About | Al-Professor",
-    "aboutDescription": "Al-Professor for porcelain and ceramics. Authorized ETONG agent in Gharbia Governorate.",
-    "projectsTitle": "Work | Al-Professor",
-    "projectsDescription": "Al-Professor campaign gallery: ETONG adhesive, CG2 grout, and latex.",
-    "contactTitle": "Contact | Al-Professor",
-    "contactDescription": "Request a quote on WhatsApp or call Al-Professor in Gharbia.",
+    "homeTitle": "ETONG agent in Gharbia | Al-Professor porcelain and ceramics, Tanta",
+    "homeDescription": "Al-Professor is an authorized ETONG porcelain-adhesive agent in Gharbia, Egypt. Photographed catalog: FIX adhesives, CG2 grout, Bond Latex 1 LT. Call 01116527671 — WhatsApp 01080458042.",
+    "productsTitle": "ETONG adhesive, grout, latex catalog | Al-Professor Gharbia",
+    "productsDescription": "Eight photographed packs: FIX C1 and C2, Ultra Fiber 840 for bathrooms and pools, CG2 grout, Bond Latex. Request a quote in Gharbia.",
+    "aboutTitle": "About | Authorized ETONG agent in Gharbia",
+    "aboutDescription": "Al-Professor for porcelain and ceramics. ETONG agent in Tanta and Gharbia. Catalog limited to photographed packs.",
+    "projectsTitle": "Campaigns | Al-Professor Gharbia",
+    "projectsDescription": "Al-Professor campaign gallery: ETONG adhesive, CG2 grout, and latex. Site coverage is Gharbia only.",
+    "contactTitle": "Contact and quotes | Al-Professor Gharbia",
+    "contactDescription": "Request a quote on WhatsApp 01080458042 or call 01116527671. Map centered on Tanta, Gharbia.",
     "notFoundTitle": "Page not found | Al-Professor"
   },
   "nav": {
@@ -34,6 +34,7 @@
     "title": "Adhesive, grout, latex",
     "role": "Al-Professor for porcelain and ceramics",
     "lede": "FIX bags, CG2 tile grout, and Bond Latex 1 LT. The catalog is the photographed packs.",
+    "definition": "Al-Professor is an authorized agent for ETONG porcelain adhesive in Gharbia Governorate, Egypt. The business covers porcelain, ceramics, and construction chemicals; this catalog is photographed packs only.",
     "caption": "700 C2TE  /  GROUT CG2  /  LATEX 1LT",
     "scroll": "scroll"
   },
@@ -127,7 +128,8 @@
     "color": "Color",
     "tech": "Technology",
     "category": "Category",
-    "quoteText": "I need a quote for {name} ({code})"
+    "quoteText": "I need a quote for {name} ({code})",
+    "related": "More in this category"
   },
   "about": {
     "kicker": "About",
@@ -162,5 +164,31 @@
   },
   "common": {
     "brandAlt": "Al-Professor porcelain and ceramics emblem"
+  },
+  "extract": {
+    "factsKicker": "Facts",
+    "factsTitle": "Agency facts for contact and citation",
+    "lineupKicker": "Printed comparison",
+    "lineupTitle": "ETONG line from pack text",
+    "lineupLede": "Code, class, and weight come from photographed packs. An empty cell means it is not printed.",
+    "colCode": "Code",
+    "colClass": "Class",
+    "colPack": "Pack",
+    "colUse": "Printed use",
+    "faqKicker": "FAQ",
+    "faqTitle": "FAQ: Al-Professor and ETONG in Gharbia",
+    "faqLede": "Direct answers from site data and pack text. No guessed unpublished specs.",
+    "howKicker": "Quotes",
+    "howTitle": "How to request a quote",
+    "howLede": "Three steps. No prices on the pages.",
+    "how1": "Choose the product by the printed code.",
+    "how2": "State quantity in bags or packs.",
+    "how3": "WhatsApp 01080458042 or call 01116527671.",
+    "napName": "Name",
+    "napRole": "Role",
+    "napRegion": "Coverage",
+    "napCall": "Call",
+    "napWa": "WhatsApp",
+    "napMap": "Map"
   }
 }

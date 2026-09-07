@@ -2,11 +2,18 @@ Options -Indexes
 DirectoryIndex index.html
 AddType image/jpeg .jpg .jpeg
 AddType image/png .png
+AddType text/plain .txt
+AddDefaultCharset UTF-8
 
 RewriteEngine On
 
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} !\.
+RewriteRule ^(.+)$ /$1/ [R=301,L]
 
 RewriteRule ^ar$ / [R=301,L]
 RewriteRule ^ar/(.*)$ /$1 [R=301,L]
