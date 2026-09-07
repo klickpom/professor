@@ -42,6 +42,9 @@ export const metadata: Metadata = {
   title: site.name.ar,
   description: site.role.ar,
   applicationName: site.shortName.ar,
+  verification: {
+    google: "6scuIpy_tcjiq1ThwIWEcraL9lVIKnPPvNYNaiRnVG4",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48" },
